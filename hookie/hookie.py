@@ -157,7 +157,15 @@ def _if_not_owner(args):
 
 def check_yaml(args):
 
-    dat_yaml = os.path.join(os.path.dirname(__file__), 'hookie.yaml')
+    dat_yaml = 'hookie.yaml'
+    if not os.path.exists(dat_yaml):
+        dat_yaml = 'hookie/hookie.yaml'
+        if not os.path.exists(dat_yaml):
+            dat_yaml = os.path.join(os.path.dirname(__file__), 'hookie.yaml')
+            if not os.path.exists(dat_yaml):
+                print "Didn't find your config. Using defaults."
+                return
+
     attrs = yaml.load(file(dat_yaml, 'r'))
     if args.github == 'https://api.github.com':
         custom_endpoint = attrs['github']
