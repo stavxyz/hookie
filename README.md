@@ -8,6 +8,14 @@ wraps a few of github's v3 API webhooks calls
 $ pip install https://github.com/smlstvnh/hookie/archive/master.zip
 ```
 
+#### dev/install
+```
+(fork it)
+$ git clone git@github.com:<your-username>/hookie
+$ cd hookie
+$ pip install -e .
+```
+
 #### usage
 set up your hookie.yaml and go
 
