@@ -19,12 +19,6 @@ see existing hooks and their parameters
 $ hookie show -u smlstvnh -r hookie
 ```
 
-create a new hook which triggers on a new pull request or issue comment (currently the default)
-```bash
-```
-
----------
-
 #### sample workflow
 
 ```bash
