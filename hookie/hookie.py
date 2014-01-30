@@ -136,7 +136,8 @@ def auth(args):
 
     netloc = urlparse(args.github).netloc
     git_pass = getpass("%s's (%s) password: " % (args.youare, netloc))
-    data = json.dumps({"scopes": ["repo"]})
+    data = json.dumps({"scopes": ["repo"],
+                       "note": "hookie"})
 
     auth_url = "%s/authorizations" % args.github
     auth_response = requests.post(auth_url, data=data,
@@ -146,7 +147,6 @@ def auth(args):
         sys.exit("sorry. failed to authenticate against [ %s ]\n%s"
                  % (args.github, auth_response.reason))
 
-    #print "token: %s" % auth_response.json()['token']
     return auth_response.json()['token']
 
 
