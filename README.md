@@ -17,7 +17,8 @@ $ pip install -e .
 ```
 
 #### usage
-set up your [`hookie/hookie.yaml`](https://github.com/smlstvnh/hookie/blob/master/hookie/hookie.yaml) and go
+set up your [`hookie/hookie.yaml`](https://github.com/smlstvnh/hookie/blob/master/hookie/hookie.yaml)
+  * otherwise, defaults to https://api.github.com
 
 see existing hooks and their parameters
 ```bash
