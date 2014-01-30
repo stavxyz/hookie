@@ -3,20 +3,13 @@ hookie
 
 wraps a few of github's v3 API webhooks calls
 
-#### install
+#### install & use
 ```bash
 $ pip install https://github.com/smlstvnh/hookie/archive/master.zip
+$ hookie run --create http://jenkins.hookie.net:8080/ghprbhook/ -u smlstvnh -r hookie
 ```
 
-#### dev/install
-```
-(fork it)
-$ git clone git@github.com:<your-username>/hookie
-$ cd hookie
-$ pip install -e .
-```
-
-#### usage
+#### or use with an enterprise github
 set up your [`hookie/hookie.yaml`](https://github.com/smlstvnh/hookie/blob/master/hookie/hookie.yaml)
   * otherwise, defaults to https://api.github.com
 
@@ -27,7 +20,6 @@ $ hookie show -u smlstvnh -r hookie
 
 create a new hook which triggers on a new pull request or issue comment (currently the default)
 ```bash
-$ hookie run --create http://jenkins.hookie.net:8080/ghprbhook/ -u smlstvnh -r hookie
 ```
 
 ---------
