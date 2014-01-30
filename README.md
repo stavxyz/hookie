@@ -7,6 +7,7 @@ wraps a few of github's v3 API webhooks calls
 ```bash
 $ pip install https://github.com/smlstvnh/hookie/archive/master.zip
 $ hookie run --create http://jenkins.hookie.net:8080/ghprbhook/ -u smlstvnh -r hookie
+Creating hook [ http://jenkins.hookie.net:8080/ghprbhook/ ] for smlstvnh -- hookie
 ```
 
 #### or use with an enterprise github
