@@ -4,7 +4,7 @@ hookie
 wraps a few of github's v3 API webhooks calls
 
 #### install & use
-```bash
+```
 $ pip install https://github.com/smlstvnh/hookie/archive/master.zip
 $ hookie run --create http://jenkins.hookie.net:8080/ghprbhook/ -u smlstvnh -r hookie
 Creating hook [ http://jenkins.hookie.net:8080/ghprbhook/ ] for smlstvnh -- hookie
@@ -15,7 +15,7 @@ set up your [`hookie/hookie.yaml`](https://github.com/smlstvnh/hookie/blob/maste
   * otherwise, defaults to https://api.github.com
 
 see existing hooks and their parameters
-```bash
+```
 $ hookie show -u smlstvnh -r hookie
 ```
 
@@ -23,21 +23,21 @@ $ hookie show -u smlstvnh -r hookie
 
 #### sample workflow
 
-```bash
+```
 $ hookie show -u smlstvnh -r hookie
 ------------------------------------
  ### WEBHOOKS ON smlstvnh:hookie ###
 ------------------------------------
 ```
 Nothing yet. Let me create one. 
-```bash
+```
 $ hookie run --create http://jenkins.hookie.net:8080/ghprbhook/ -u smlstvnh -r hookie
 fetching list of existing hooks for smlstvnh:hookie
 
 Creating hook [ http://jenkins.hookie.net:8080/ghprbhook/ ] for smlstvnh -- hookie
 ```
 Show the details. 
-```bash
+```
 $ hookie show -u smlstvnh -r hookie
 ------------------------------------
  ### WEBHOOKS ON smlstvnh:hookie ###
@@ -70,7 +70,7 @@ NOTE:
 
 Time for a deletion.
 
-```bash
+```
 $ hookie run --delete bogus -u smlstvnh -r hookie
 fetching list of existing hooks for smlstvnh:hookie
 
@@ -83,7 +83,7 @@ Try deleting one of:
 
 Right.
 
-```bash
+```
 $ hookie run --delete 1745140 -u smlstvnh -r hookie
 fetching list of existing hooks for smlstvnh:hookie
 
