@@ -19,6 +19,8 @@ see existing hooks and their parameters
 $ hookie show -u smlstvnh -r hookie
 ```
 
+------------
+
 #### sample workflow
 
 ```bash
