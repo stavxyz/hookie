@@ -72,7 +72,7 @@ $ hookie show -u smlstvnh -r hookie
 ------
 NOTE:  
 
-* hookie is currently set up (because I primarily use it with [ghprb](https://github.com/janinko/ghprb)) to trigger on
+* hookie is currently set up (because I primarily use it with [ghprb](https://github.com/janinko/ghprb)) so that webhooks it creates will trigger on
   * `events: ['issue_comment', 'pull_request']`
 * I will make that, and more of these parameters dynamic as soon as it's needed. 
 
