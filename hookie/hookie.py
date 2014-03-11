@@ -209,6 +209,7 @@ def show(args):
 @arg('-t', '--content-type', help='content type for hook to post',
      default='form')
 @arg('-e', '--events', help='Event types for the new hook(s) to trigger on',
+     type=str,
      default=['issue_comment', 'pull_request'], nargs='+')
 @arg('-g', '--github', help=' ',
      default='https://api.github.com')
